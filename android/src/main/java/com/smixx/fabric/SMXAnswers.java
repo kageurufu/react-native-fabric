@@ -1,6 +1,5 @@
 package com.smixx.fabric;
 
-import android.app.Activity;
 import android.util.Log;
 
 import com.crashlytics.android.answers.AddToCartEvent;
@@ -30,11 +29,8 @@ import java.math.BigDecimal;
 import java.util.Currency;
 
 public class SMXAnswers extends ReactContextBaseJavaModule {
-    public Activity activity;
-
-    public SMXAnswers(ReactApplicationContext reactContext, Activity activity) {
+    public SMXAnswers(ReactApplicationContext reactContext) {
         super(reactContext);
-        this.activity = activity;
     }
 
     @Override

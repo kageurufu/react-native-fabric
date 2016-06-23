@@ -1,6 +1,5 @@
 package com.smixx.fabric;
 
-import android.app.Activity;
 import android.util.Log;
 
 import com.crashlytics.android.Crashlytics;
@@ -11,11 +10,8 @@ import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.bridge.ReadableMap;
 
 public class SMXCrashlytics extends ReactContextBaseJavaModule {
-    public Activity activity;
-
-    public SMXCrashlytics(ReactApplicationContext reactContext, Activity activity) {
+    public SMXCrashlytics(ReactApplicationContext reactContext) {
         super(reactContext);
-        this.activity = activity;
     }
 
     @Override

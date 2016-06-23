@@ -76,7 +76,7 @@ If the rnpm installation goes off without a hitch, you can now skip to the **[Cr
     @Override
     protected List<ReactPackage> getPackages() {
         return Arrays.<ReactPackage>asList(
-  +         new FabricPackage(this),
+  +         new FabricPackage(),
             new MainReactPackage()
         );
     }

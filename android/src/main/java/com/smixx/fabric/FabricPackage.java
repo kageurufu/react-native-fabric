@@ -13,17 +13,15 @@ import java.util.List;
 
 public class FabricPackage implements ReactPackage {
 
-    private Activity mActivity = null;
-    public FabricPackage(Activity activity) {
-        mActivity = activity;
+    public FabricPackage() {
     }
 
     @Override
     public List<NativeModule> createNativeModules(
             ReactApplicationContext reactContext) {
         List<NativeModule> modules = new ArrayList<>();
-        modules.add(new SMXCrashlytics(reactContext, mActivity));
-        modules.add(new SMXAnswers(reactContext, mActivity));
+        modules.add(new SMXCrashlytics(reactContext));
+        modules.add(new SMXAnswers(reactContext));
         return modules;
     }
 
